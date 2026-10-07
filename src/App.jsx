@@ -1,33 +1,18 @@
+import Projects from './components/Projects'
+
 function App() {
   return (
-    <div style={{ textAlign: 'center', padding: '60px', fontFamily: 'Arial' }}>
-      <h1 style={{ fontSize: '40px' }}>Hello, I'm Charles 👋</h1>
-      <p style={{ fontSize: '18px' }}>ERA Axis Bootcamp - My Portfolio Day 1</p>
+    <div style={{background: 'white', color: '#222', minHeight: '100vh', padding: '40px', fontFamily: 'sans-serif', textAlign: 'center'}}>
+      <h1 style={{color: '#5B2CFF'}}>Hello, I'm Charles 👋</h1>
+      <p>ERA Axis Bootcamp - Future Web Developer</p>
+      <p>I built my first React website from zero.</p>
       
-      <p style={{ marginTop: '20px' }}>
-        I just built my first React website and it's running on my laptop!
-      </p>
+      <Projects />
 
-      <button 
-        onClick={() => alert('Session 1 Complete! 🚀')}
-        style={{ 
-          marginTop: '20px', 
-          padding: '12px 25px', 
-          fontSize: '16px',
-          background: 'black',
-          color: 'white',
-          borderRadius: '8px',
-          cursor: 'pointer'
-        }}
-      >
-        Click Me
-      </button>
-
-      <p style={{ marginTop: '30px', color: 'gray' }}>
-        Next: I will add my projects & contact.
-      </p>
+      <a href="#" style={{display: 'inline-block', marginTop: '30px', background: '#5B2CFF', color: 'white', padding: '12px 24px', borderRadius: '8px', textDecoration: 'none'}}>
+        Contact Me
+      </a>
     </div>
   )
 }
-
 export default App
